@@ -33,6 +33,19 @@ fbq('track', 'PageView');
 src="https://www.facebook.com/tr?id=439785653951197&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
+ <!-- Script utm perfectpay -->
+<script>
+    window.onload = function () {
+        var links = document.getElementsByTagName("a");
+        for (var i = 0, n = links.length; i < n; i++) {
+            var href = links[i].href.trim() +
+                    (links[i].href.indexOf("?") > 0 ? '&' : '?') +
+                    document.location.search.replace('?', '').toString();
+            links[i].href = href;
+        }
+    }
+</script>
+	
 <script>
 window.onload = function() {
   var anchors = document.getElementsByTagName("a");
@@ -42,6 +55,7 @@ window.onload = function() {
   }
 }
 </script>
+ <!-- Script utm perfectpay -->
 <script src="js/player.js" async=""></script><script src="js/a.js" async=""></script>
 </head>
 
@@ -264,20 +278,6 @@ html {overflow-x:hidden}
 <link rel="dns-prefetch" href="https://images.converteai.net">
 <link rel="dns-prefetch" href="https://api.vturb.com.br">
 <!-- VTURB -->
- <!-- Script utm perfectpay -->
-<script>
-    window.onload = function () {
-        var links = document.getElementsByTagName("a");
-        for (var i = 0, n = links.length; i < n; i++) {
-            var href = links[i].href.trim() +
-                    (links[i].href.indexOf("?") > 0 ? '&' : '?') +
-                    document.location.search.replace('?', '').toString();
-            links[i].href = href;
-        }
-    }
-</script>
-  
-  <!-- Script utm perfectpay -->
 <style>
 #division-1658581343653 {
 border: none;
