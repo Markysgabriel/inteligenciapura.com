@@ -389,61 +389,7 @@
     <span id="progressText" style="position: absolute; left: 12px; top: 50%; transform: translateY(-50%); font-family: 'Montserrat', sans-serif; font-size: 16px; color: #fff;">2%</span>
   </div>
 </div>
-
-<script>
-  const progressBar = document.getElementById("myProgressBar");
-  const progressText = document.getElementById("progressText");
-
-  function updateProgressBar() {
-    let percentage = 1;
-    const totalTime = 670; // 2 minutos e 25 segundos (145 segundos)
-
-    const firstPhaseTime =166; // 29 segundos - de 0% a 20%
-    const secondPhaseTime = 169; // 58 segundos - de 20% a 50%
-    const thirdPhaseTime = totalTime - (firstPhaseTime + secondPhaseTime); // 58 segundos - de 50% a 100%
-
-    const firstPhaseIncrement = 20 / (firstPhaseTime * 10); // Incremento de 2% a cada 0.1 segundo
-    const secondPhaseIncrement = 30 / (secondPhaseTime * 10); // Incremento de 1.5% a cada 0.1 segundo
-    const thirdPhaseIncrement = 50 / (thirdPhaseTime * 10); // Incremento de 2.5% a cada 0.1 segundo
-
-    let phase = 1;
-
-    const interval = setInterval(() => {
-      if (phase === 1) {
-        percentage += firstPhaseIncrement;
-        if (percentage >= 20) {
-          percentage = 20;
-          phase = 2;
-        }
-      } else if (phase === 2) {
-        percentage += secondPhaseIncrement;
-        if (percentage >= 50) {
-          percentage = 50;
-          phase = 3;
-        }
-      } else if (phase === 3) {
-        percentage += thirdPhaseIncrement;
-        if (percentage >= 100) {
-          percentage = 100;
-          clearInterval(interval);
-          progressText.innerText = "100% Completo";
-          progressText.style.color = "#fff";
-        }
-      }
-
-      progressBar.style.width = percentage + "%";
-      progressText.innerText = Math.round(percentage) + "%";
-    }, 100);
-  }
-
-  updateProgressBar();
-</script>
-		</div>
-				</div>
-				<div class="elementor-element elementor-element-b1df4bf elementor-widget elementor-widget-heading" data-id="b1df4bf" data-element_type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-			<h2 class="elementor-heading-title elementor-size-default">Enquanto isso, de uma olhada neste pequeno video de 2 minutos onde<span style="color:#00BBB2"><b> explico como nossa tecnologia funciona...</b></span></h2>		</div>
-				</div>
+				
 				 <!-- VSL -->
 				<div id="vid_657efa68483a640009c9bc97" style="position:relative;width:100%;padding: 56.25% 0 0;"><img id="thumb_657efa68483a640009c9bc97" src="https://images.converteai.net/56fe0ec9-958d-4581-b5c4-054142daffd2/players/657efa68483a640009c9bc97/thumbnail.jpg" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;"><div id="backdrop_657efa68483a640009c9bc97" style="position:absolute;top:0;width:100%;height:100%;-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);"></div></div><script type="text/javascript" id="scr_657efa68483a640009c9bc97">var s=document.createElement("script");s.src="https://scripts.converteai.net/56fe0ec9-958d-4581-b5c4-054142daffd2/players/657efa68483a640009c9bc97/player.js",s.async=!0,document.head.appendChild(s);</script>
 				 <!-- VSL -->
