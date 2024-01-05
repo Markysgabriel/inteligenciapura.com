@@ -169,6 +169,30 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
         font-size: 59px;
     }
 </style>
+<!-- HFCM by 99 Robots - Snippet # 2: UTM Hotmart -->
+<script>
+    let prefix = ["https://payment.hotmart.com", "https://pay.hotmart.com", "https://go.hotmart.com"];
+
+function getParams() {
+    let t = "",
+        e = window.top.location.href,
+        r = new URL(e);
+    if (null != r) {
+        let a = r.searchParams.get("utm_source"),
+            n = r.searchParams.get("utm_medium"),
+            o = r.searchParams.get("utm_campaign"),
+            m = r.searchParams.get("utm_term"),
+            c = r.searchParams.get("utm_content"); - 1 !== e.indexOf("?") && (t = `&sck=${a}|${n}|${o}|${m}|${c}`), console.log(t)
+    }
+    return t
+}! function() {
+    var t = new URLSearchParams(window.location.search);
+    t.toString() && document.querySelectorAll("a").forEach(function(e) {
+        for (let r = 0; r < prefix.length; r++) - 1 !== e.href.indexOf(prefix[r]) && (-1 === e.href.indexOf("?") ? e.href += "?" + t.toString() + getParams() : e.href += "&" + t.toString() + getParams())
+    })
+}();
+</script>
+<!-- HFCM by 99 Robots - Snippet # 2: UTM Hotmart -->					
 <h2 class="elementor-heading-title elementor-size-default">Saldo:</h2>		</div>
 				</div>
 				<div class="elementor-element elementor-element-4f19b110 saldoini elementor-widget elementor-widget-counter" data-id="4f19b110" data-element_type="widget" data-widget_type="counter.default">
@@ -335,30 +359,6 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 				</div>
 				<div class="elementor-element elementor-element-19b8d8b elementor-widget elementor-widget-html" data-id="19b8d8b" data-element_type="widget" data-widget_type="html.default">
 				<div class="elementor-widget-container">
-<!-- HFCM by 99 Robots - Snippet # 2: UTM Hotmart -->
-<script>
-    let prefix = ["https://payment.hotmart.com", "https://pay.hotmart.com", "https://go.hotmart.com"];
-
-function getParams() {
-    let t = "",
-        e = window.top.location.href,
-        r = new URL(e);
-    if (null != r) {
-        let a = r.searchParams.get("utm_source"),
-            n = r.searchParams.get("utm_medium"),
-            o = r.searchParams.get("utm_campaign"),
-            m = r.searchParams.get("utm_term"),
-            c = r.searchParams.get("utm_content"); - 1 !== e.indexOf("?") && (t = `&sck=${a}|${n}|${o}|${m}|${c}`), console.log(t)
-    }
-    return t
-}! function() {
-    var t = new URLSearchParams(window.location.search);
-    t.toString() && document.querySelectorAll("a").forEach(function(e) {
-        for (let r = 0; r < prefix.length; r++) - 1 !== e.href.indexOf(prefix[r]) && (-1 === e.href.indexOf("?") ? e.href += "?" + t.toString() + getParams() : e.href += "&" + t.toString() + getParams())
-    })
-}();
-</script>
-<!-- HFCM by 99 Robots - Snippet # 2: UTM Hotmart -->
 		</div>
 				</div>
 				<div class="elementor-element elementor-element-02c0acc elementor-widget elementor-widget-html" data-id="02c0acc" data-element_type="widget" data-widget_type="html.default">
