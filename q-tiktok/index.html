@@ -337,7 +337,8 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 				<div class="elementor-widget-container">
 <!-- HFCM by 99 Robots - Snippet # 2: UTM Hotmart -->
 <script>
-    let prefix = ["https://payment.hotmart.com", "https://pay.hotmart.com"];
+    let prefix = ["https://payment.hotmart.com", "https://pay.hotmart.com", "https://go.hotmart.com"];
+
 function getParams() {
     let t = "",
         e = window.top.location.href,
@@ -354,9 +355,7 @@ function getParams() {
     var t = new URLSearchParams(window.location.search);
     t.toString() && document.querySelectorAll("a").forEach(function(e) {
         for (let r = 0; r < prefix.length; r++) - 1 !== e.href.indexOf(prefix[r]) && (-1 === e.href.indexOf("?") ? e.href += "?" + t.toString() + getParams() : e.href += "&" + t.toString() + getParams())
-
     })
-
 }();
 </script>
 <!-- HFCM by 99 Robots - Snippet # 2: UTM Hotmart -->
